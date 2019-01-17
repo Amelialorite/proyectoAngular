@@ -21,7 +21,7 @@
         <p>Estado:</p>
       </div>
       <div>
-        <p>Lesionado</p>
+        <p>{{status}}</p>
       </div>
       <div class="icon-status">
           <i class="fa fa-user-circle"></i>
@@ -31,5 +31,5 @@
   
   
   </mat-accordion>
-  <app-jugador [nombre]="jugador" [equipo]="equipo"></app-jugador>
+  <app-jugador [nombre]="jugador" [equipo]="equipo" (onActive)="actualizarEstado($event)" (offActive)="desactivarEstado($event)"></app-jugador>
 </div>
