@@ -17,14 +17,15 @@
     }
     &-actions{
         align-items: flex-end;
-        justify-content: flex-end;
+        justify-content: space-evenly;
         display: flex;
     }
-    .mat-button{
-        background:#ececec;
-        color: initial;
-        font-weight: bold;
-        text-transform: uppercase;
+    .mat-stroked-button{
+        &.active{
+            background:#ffffff57;
+            color: initial;
+        }
+      
     }
       
 }

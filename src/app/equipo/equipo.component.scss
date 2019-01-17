@@ -1,4 +1,4 @@
-$lesionado: #a92626;
+$Inactivo: #a92626;
 .contenedor {
   max-width: 1024px;
   width: 100%;
@@ -9,7 +9,8 @@ $lesionado: #a92626;
   }
   .icon-status{
     i {
-      color:$lesionado;
+      color:initial;
+      
     }
   }
 }

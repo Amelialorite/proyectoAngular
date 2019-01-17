@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EquipoComponent implements OnInit {
   nombre:string = 'Felinos';
-  status:boolean = false;
+  status:boolean = null;
   jugador:string = 'Carlos';
   equipo:string ='Cincocina F.S';
   constructor() { }
