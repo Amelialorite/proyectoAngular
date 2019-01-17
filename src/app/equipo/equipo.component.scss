@@ -1,3 +1,4 @@
+$lesionado: #a92626;
 .contenedor {
   max-width: 1024px;
   width: 100%;
@@ -6,26 +7,9 @@
     border-bottom: 1px solid #a6a5a5;
     padding-bottom: 10px;
   }
-}
-.mat-expansion {
-  &-panel {
-    color: #424242;
-    background: #cac6c6;
-    &-header {
-      div {
-        width: calc(100% / 3);
-        display: flex;
-        align-items: center;
-        i {
-          font-size: 30px;
-        }
-      }
-    }
-
-    &:focus,
-    &:hover {
-      background: #d2d2d2;
+  .icon-status{
+    i {
+      color:$lesionado;
     }
   }
-
 }

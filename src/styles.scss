@@ -3,11 +3,46 @@
 @import url(https://fonts.googleapis.com/icon?family=Material+Icons);
 @import url(https://fonts.googleapis.com/icon?family=Roboto);
 $fa-font-path: "../node_modules/font-awesome/fonts";
-@import '~font-awesome/scss/font-awesome.scss';
-body{
-    font-family: Roboto;
-    margin:unset;
-    background-color:white;
-   
-   
+@import "~font-awesome/scss/font-awesome.scss";
+body {
+  font-family: Roboto;
+  margin: unset;
+  background-color: white;
+
+  .mat-expansion {
+    &-indicator::after {
+      color: initial;
+    }
+    &-panel {
+      color: #424242;
+      background: #ececec;
+      i {
+        font-size: 30px;
+      }
+      &-header {
+        div {
+          width: calc(100% / 3);
+          display: flex;
+          align-items: center;
+        }
+      }
+      &-body {
+        display: flex;
+        align-items: center;
+        div {
+          width: calc(100% / 3);
+          display: flex;
+          align-items: center;
+          &.icon-status {
+            justify-content: flex-end;
+          }
+        }
+      }
+
+      &:focus,
+      &:hover {
+        background:#ececec;
+      }
+    }
+  }
 }
