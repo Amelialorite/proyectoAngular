@@ -13,10 +13,10 @@ export class JugadorComponent implements OnInit {
   @Input('equipo')
   equipo:string ='Sin equipo';
 
-  @Output('onActive')
-  status:EventEmitter<boolean> = new EventEmitter <boolean>();
-  @Output('offActive')
-  status:EventEmitter<boolean> = new EventEmitter <boolean>();
+  @Output('on')
+  status:EventEmitter<string> = new EventEmitter <string>();
+  @Output('off')
+  statusoff:EventEmitter<string> = new EventEmitter <string>();
 
   constructor() { }
 
@@ -26,6 +26,6 @@ export class JugadorComponent implements OnInit {
     this.status.emit('Activo');
   }
   desactivarJugador(){
-    this.status.emit('Inactivo');
+    this.statusoff.emit('Inactivo');
   }
 }
