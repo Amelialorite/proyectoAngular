@@ -13,7 +13,7 @@ export class EquipoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.nombre ='Piratas';
+    this.nombre ='Cincocina Futsal';
   }
 
   agregarJugador(){

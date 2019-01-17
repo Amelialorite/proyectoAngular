@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <div class="contenedor">
-  <p>
-    {{nombre}}
-  </p>
+  <h2>
+    Equipo: {{nombre}}
+  </h2>
+  <h3>Jugadores</h3>
+  
   <mat-accordion>
   
     <mat-expansion-panel>
       <mat-expansion-panel-header>
-        This is the expansion 1 title
+        <div>
+          <p>{{jugador}}</p>
+        </div>
+        <div>
+          <p>posición</p>
+        </div>
+        <div>
+          <i class="fa fa-user-circle"></i>
+        </div>
       </mat-expansion-panel-header>
   
       This the expansion 1 content
