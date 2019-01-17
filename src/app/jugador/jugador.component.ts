@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-jugador',
@@ -6,7 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./jugador.component.scss']
 })
 export class JugadorComponent implements OnInit {
-
+  @Input('nombre')
+  jugador:string = 'Sergio'
+  @Input('equipo')
+  equipo:string ='Real Madrid'
   constructor() { }
 
   ngOnInit() {

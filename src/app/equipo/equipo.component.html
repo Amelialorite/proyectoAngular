@@ -1,2 +1,20 @@
-<h1>Nombre del equipo</h1>
-<app-jugador></app-jugador>
+<!DOCTYPE html>
+<div class="contenedor">
+  <p>
+    {{nombre}}
+  </p>
+  <mat-accordion>
+  
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        This is the expansion 1 title
+      </mat-expansion-panel-header>
+  
+      This the expansion 1 content
+  
+    </mat-expansion-panel>
+  
+  
+  </mat-accordion>
+  <app-jugador [nombre]="jugador" [equipo]="equipo"></app-jugador>
+</div>
