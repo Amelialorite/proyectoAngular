@@ -1,5 +1,4 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { setClassMetadata } from '@angular/core/src/render3';
 
 @Component({
   selector: 'app-jugador',
