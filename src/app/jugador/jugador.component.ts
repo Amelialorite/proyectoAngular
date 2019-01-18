@@ -23,8 +23,13 @@ export class JugadorComponent implements OnInit {
   }
   activarJugador(){
     this.status.emit('Activo');
+
+    let div = document.querySelector('.mat-stroked-button');
+    div.className = 'mat-stroked-button-active';
+   
   }
   desactivarJugador(){
     this.statusoff.emit('Inactivo');
+    
   }
 }
