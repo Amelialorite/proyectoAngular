@@ -23,18 +23,18 @@ export class JugadorComponent implements OnInit {
   }
   activarJugador(){
     this.status.emit('Activo');
-    let div = document.querySelector('#on_.mat-stroked-button');
-    div.className = 'mat-stroked-button-active';
-    let div = document.querySelector('#off_.mat-stroked-button-active');
-    div.className = 'mat-stroked-button';
+    let btn0 = document.querySelector('#on_.mat-stroked-button');
+    btn0.className = 'mat-stroked-button-active';
+    let btn1 = document.querySelector('#off_.mat-stroked-button-active');
+    btn1.className = 'mat-stroked-button';
    
   }
   desactivarJugador(){
     this.statusoff.emit('Inactivo');
-    let div = document.querySelector('#on_.mat-stroked-button-active');
-    div.className = 'mat-stroked-button';
-    let div = document.querySelector('#off_.mat-stroked-button');
-    div.className = 'mat-stroked-button-active';
+    let btn2 = document.querySelector('#on_.mat-stroked-button-active');
+    btn2.className = 'mat-stroked-button';
+    let btn3 = document.querySelector('#off_.mat-stroked-button');
+    btn3.className = 'mat-stroked-button-active';
     
   }
 }
