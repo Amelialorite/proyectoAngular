@@ -23,8 +23,13 @@ export class EquipoComponent implements OnInit {
   }
   actualizarEstado(event){
     this.status = event;
+    let div = document.querySelector('.icon-status');
+    div.className = 'icon-status-active';
+    
   }
   desactivarEstado(event){
     this.status = event;
+    let div = document.querySelector('.icon-status-active');
+    div.className = 'icon-status';
   }
 }

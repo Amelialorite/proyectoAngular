@@ -4,6 +4,7 @@
 @import url(https://fonts.googleapis.com/icon?family=Roboto);
 $fa-font-path: "../node_modules/font-awesome/fonts";
 @import "~font-awesome/scss/font-awesome.scss";
+
 body {
   font-family: Roboto;
   margin: unset;
@@ -35,6 +36,7 @@ body {
           align-items: center;
           &.icon-status {
             justify-content: flex-end;
+           
           }
         }
       }

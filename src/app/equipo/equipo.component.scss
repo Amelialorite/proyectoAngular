@@ -1,4 +1,6 @@
-$Inactivo: #a92626;
+
+$Activo:#268866;
+%icon-status{justify-content: flex-end};
 .contenedor {
   max-width: 1024px;
   width: 100%;
@@ -12,5 +14,10 @@ $Inactivo: #a92626;
       color:initial;
       
     }
+    &-active{
+      color:$Activo;
+      @extend %icon-status;
+    }
+    
   }
 }
