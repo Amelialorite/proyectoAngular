@@ -1,13 +1,14 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-
+import { Jugador } from './../_interfaces/jugador.interface';
 @Component({
   selector: 'app-jugador',
   templateUrl: './jugador.component.html',
   styleUrls: ['./jugador.component.scss']
 })
 export class JugadorComponent implements OnInit {
-  @Input('nombre')
-  jugador:string = 'Sergio';
+  @Input('jugador')
+  // jugador:string = 'Sergio';
+  jugador: Jugador;
   
   @Input('equipo')
   equipo:string ='Sin equipo';
