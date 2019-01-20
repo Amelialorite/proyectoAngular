@@ -16,7 +16,7 @@ export class JugadorComponent implements OnInit {
   @Output('on')
   status:EventEmitter<boolean> = new EventEmitter <boolean>();
   @Output('off')
-  status:EventEmitter<boolean> = new EventEmitter <boolean>();
+  statusoff:EventEmitter<boolean> = new EventEmitter <boolean>();
 
   constructor() { }
 
@@ -26,12 +26,13 @@ export class JugadorComponent implements OnInit {
     this.status.emit(true);
     let btn0 = document.querySelector('#on_.mat-stroked-button');
     btn0.className = 'mat-stroked-button-active';
+    btn0.classList.add("-active");
     let btn1 = document.querySelector('#off_.mat-stroked-button-active');
     btn1.className = 'mat-stroked-button';
    
   }
   desactivarJugador(){
-    this.status.emit(false);
+    this.statusoff.emit(false);
     let btn2 = document.querySelector('#on_.mat-stroked-button-active');
     btn2.className = 'mat-stroked-button';
     let btn3 = document.querySelector('#off_.mat-stroked-button');
