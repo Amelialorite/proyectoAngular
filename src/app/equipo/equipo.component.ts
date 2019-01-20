@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Jugador } from './../_interfaces/jugador.interface';
+import * as JUGADORES from './../../assets/data/jugadores.json'
 
 @Component({
   selector: 'app-equipo',
@@ -10,7 +11,8 @@ export class EquipoComponent implements OnInit {
   nombre: string = 'Felinos';
   status: string = '';
   //jugador:string = 'Carlos';
-
+  jugadores : Jugador[];
+  
   jugador: Jugador = {
     nombre: "Juan",
     edad: "25",
@@ -26,6 +28,8 @@ export class EquipoComponent implements OnInit {
 
   ngOnInit() {
     this.nombre = 'Cincocina Futsal';
+    this.jugadores = JUGADORES as any;
+    console.log(this.jugadores);
   }
 
   agregarJugador() {
