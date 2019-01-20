@@ -14,16 +14,16 @@ export class JugadorComponent implements OnInit {
   equipo:string ='Sin equipo';
 
   @Output('on')
-  status:EventEmitter<string> = new EventEmitter <string>();
+  status:EventEmitter<boolean> = new EventEmitter <boolean>();
   @Output('off')
-  statusoff:EventEmitter<string> = new EventEmitter <string>();
+  statusoff:EventEmitter<boolean> = new EventEmitter <boolean>();
 
   constructor() { }
 
   ngOnInit() {
   }
   activarJugador(){
-    this.status.emit('Activo');
+    this.status.emit(true);
     let btn0 = document.querySelector('#on_.mat-stroked-button');
     btn0.className = 'mat-stroked-button-active';
     let btn1 = document.querySelector('#off_.mat-stroked-button-active');
@@ -31,7 +31,7 @@ export class JugadorComponent implements OnInit {
    
   }
   desactivarJugador(){
-    this.statusoff.emit('Inactivo');
+    this.statusoff.emit(false);
     let btn2 = document.querySelector('#on_.mat-stroked-button-active');
     btn2.className = 'mat-stroked-button';
     let btn3 = document.querySelector('#off_.mat-stroked-button');
