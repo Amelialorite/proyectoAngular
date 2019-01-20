@@ -14,10 +14,8 @@ $Activo:#268866;
       color:initial;
       
     }
-    &-active{
-      color:$Activo;
-      @extend %icon-status;
-    }
-    
+  }
+  .-active i{
+    color:$Activo;
   }
 }

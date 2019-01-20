@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Jugador } from './../_interfaces/jugador.interface';
 
 @Component({
   selector: 'app-equipo',
@@ -6,30 +7,43 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./equipo.component.scss']
 })
 export class EquipoComponent implements OnInit {
-  nombre:string = 'Felinos';
-  status:string = '';
-  jugador:string = 'Carlos';
-  equipo:string ='Cincocina F.S';
+  nombre: string = 'Felinos';
+  status: string = '';
+  //jugador:string = 'Carlos';
+
+  jugador: Jugador = {
+    nombre: "Juan",
+    edad: "25",
+    apodo: "Felino",
+    foto: "imageJuan.jpg",
+    posicion: "Delantero",
+    estado: false,
+    id: "dkjdkdk3434"
+
+  }
+  equipo: string = 'Cincocina F.S';
   constructor() { }
 
   ngOnInit() {
-    this.nombre ='Cincocina Futsal';
+    this.nombre = 'Cincocina Futsal';
   }
 
-  agregarJugador(){
+  agregarJugador() {
     let jugador = 'Sergio';
     jugador = 'Iván';
-    this.jugador = jugador;
+    this.jugador.nombre = jugador;
   }
-  actualizarEstado(event){
-    this.status = event;
+  actualizarEstado(event) {
+    this.jugador.estado = event;
+   // this.status = event;
     let icon1 = document.querySelector('.icon-status');
-    icon1.className = 'icon-status-active';
-    
+    icon1.classList.toggle("-active");
+
   }
-  desactivarEstado(event){
-    this.status = event;
-    let icon2 = document.querySelector('.icon-status-active');
-    icon2.className = 'icon-status';
+  desactivarEstado(event) {
+    this.jugador.estado = event;
+    let icon1 = document.querySelector('.icon-status');
+    icon1.classList.toggle("-active");
+    
   }
 }
