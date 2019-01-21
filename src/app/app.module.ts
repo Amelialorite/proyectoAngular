@@ -8,7 +8,9 @@ import { JuegoComponent } from './juego/juego.component';
 import { EquipoComponent } from './equipo/equipo.component';
 import { JugadorComponent } from './jugador/jugador.component';
 import { LoginComponent } from './login/login.component';
-import { AngularFontAwesomeModule } from 'angular-font-awesome'
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import {CommonModule} from '@angular/common';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,8 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome'
     BrowserAnimationsModule,
     MatExpansionModule,
     MatCardModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

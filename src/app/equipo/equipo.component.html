@@ -31,5 +31,5 @@
   
   
   </mat-accordion>
-  <app-jugador [jugador]="jugador" [equipo]="equipo" (on)="actualizarEstado($event)" (off)="desactivarEstado($event)"></app-jugador>
+  <app-jugador *ngFor="let j of jugadores; let i = index" [jugador]="j" [equipo]="equipo" (on)="actualizarEstado($event)" (off)="desactivarEstado($event)"></app-jugador>
 </div>
