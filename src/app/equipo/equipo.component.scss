@@ -2,28 +2,38 @@
 $Activo:#268866;
 %icon-status{justify-content: flex-end};
 .contenedor {
-  max-width: 1024px;
+  max-width: 1150px;
   width: 100%;
   margin: 0 auto;
-  h2 {
-    border-bottom: 1px solid #a6a5a5;
-    padding-bottom: 10px;
-  }
-  .icon-status{
-    i {
-      color:initial;
-      
+.contenido{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  .boxLateral{
+    padding-right: 25px;
+    width: 25%;
+    h2 {
+      border-bottom: 1px solid #a6a5a5;
+      padding-bottom: 10px;
+    }
+    .icon-status{
+      i {
+        color:initial;
+        
+      }
+    }
+    .-active i{
+      color:$Activo;
     }
   }
-  .-active i{
-    color:$Activo;
-  }
   .boxJugadores{
+    width: 75%;
     display: flex;
     flex-wrap: wrap;
     app-jugador{
-      max-width: 20%;
+      max-width: 33%;
     }
   }
+}
   
 }
