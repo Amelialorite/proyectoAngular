@@ -7,13 +7,13 @@
   
   <mat-accordion>
   
-    <mat-expansion-panel>
+    <mat-expansion-panel  *ngFor="let j of jugadores; let i = index">
       <mat-expansion-panel-header>
         <div>
-          <b>{{jugador.nombre}}</b>
+          <b>{{j.nombre}}</b>
         </div>
         <div>
-          <p>{{jugador.posicion}}</p>
+          <p>{{j.posicion}}</p>
         </div>
         
       </mat-expansion-panel-header>
@@ -21,7 +21,7 @@
         <p>Estado:</p>
       </div>
       <div>
-        <p>{{jugador.estado}}</p>
+        <p>{{j.estado}}</p>
       </div>
       <div class="icon-status" >
           <i class="fa fa-user-circle"></i>
@@ -32,6 +32,6 @@
   
   </mat-accordion>
   <div class="boxJugadores">
-    <app-jugador *ngFor="let j of jugadores; let i = index" [jugador]="j" [equipo]="equipo" (on)="actualizarEstado($event)" (off)="desactivarEstado($event)"></app-jugador>
+    <app-jugador *ngFor="let j of jugadores; let i = index" [jugador]="j" [equipo]="equipo" (on)="actualizarEstado($event)"></app-jugador>
   </div>
 </div>

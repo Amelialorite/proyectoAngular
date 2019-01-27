@@ -47,14 +47,9 @@ export class EquipoComponent implements OnInit {
   actualizarEstado(event) {
     this.jugador.estado = event;
    // this.status = event;
-    let icon1 = document.querySelector('.icon-status');
-    icon1.classList.toggle("-active");
+   // let icon1 = document.querySelector('.icon-status');
+   // icon1.classList.toggle("-active");
 
   }
-  desactivarEstado(event) {
-    this.jugador.estado = event;
-    let icon1 = document.querySelector('.icon-status');
-    icon1.classList.toggle("-active");
-    
-  }
+  
 }
