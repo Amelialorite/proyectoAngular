@@ -23,8 +23,7 @@
 }
 
 .mat-card{
-    max-width: 20%;
-    margin: 20px;
+    margin: 20px 10px;
     &-header{
         padding: 10px;
     }
@@ -41,7 +40,7 @@
     }
     &-actions{
         align-items: flex-end;
-        justify-content: space-evenly;
+        justify-content: flex-end;
         display: flex;
     }
     .mat-stroked-button{

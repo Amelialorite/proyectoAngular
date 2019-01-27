@@ -18,4 +18,12 @@ $Activo:#268866;
   .-active i{
     color:$Activo;
   }
+  .boxJugadores{
+    display: flex;
+    flex-wrap: wrap;
+    app-jugador{
+      max-width: 20%;
+    }
+  }
+  
 }
