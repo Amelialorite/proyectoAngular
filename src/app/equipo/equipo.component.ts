@@ -3,8 +3,8 @@ import { Component, OnInit } from '@angular/core';
 import { Jugador } from './../_interfaces/jugador.interface';
 import { Equipo } from './../_interfaces/equipo.interface';
 
-import * as JUGADORES from './../../assets/data/jugadores.json';
-import * as EQUIPOS from './../../assets/data/equipos.json';
+import  JUGADORES from './../../assets/data/jugadores.json';
+import  EQUIPOS from './../../assets/data/equipos.json';
 
 
 @Component({
